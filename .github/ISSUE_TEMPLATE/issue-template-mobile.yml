@@ -5,7 +5,7 @@ labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
-      value: "## Décrivez le bug rencontré"
+      value: "## Description du bug"
   - type: textarea
     id: what-happened
     attributes:
