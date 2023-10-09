@@ -25,13 +25,15 @@ body:
   - type: textarea
     id: end-user-goal
     attributes:
-      label: Objectif de l'utilisateur final
+      label: Objectif pour l'utilisateur final
+      placeholder: "Pouvoir acheter des articles avec sa carte bancaire"
     validations:
       required: true
   - type: textarea
     id: end-business-goal
     attributes:
-      label: Objectif métier final
+      label: Objectif final pour le métier
+      placeholder: "Augmenter le nombre de ventes"
   - type: textarea
     id: acceptance-criteria
     attributes:
