@@ -23,14 +23,10 @@ body:
     id: end-user-goal
     attributes:
       label: Objectif de l'utilisateur final
-      placeholder: ""
-      value: ""
   - type: textarea
     id: end-business-goal
     attributes:
       label: Objectif métier final
-      placeholder: ""
-      value: ""
   - type: textarea
     id: acceptance-criteria
     attributes:
