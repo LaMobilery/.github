@@ -1,6 +1,6 @@
 name: Rapport de bug mobile
 description: Rapporter un nouveau bug
-title: "[Bug]: "
+title: "[Bug] "
 labels: ["bug", "triage"]
 body:
   - type: markdown
@@ -10,6 +10,7 @@ body:
     id: what-happened
     attributes:
       label: Que s'est-il passé ?
+      description: N'hésitez pas à lister méthodiquement les étapes de reproduction du bug et le résultat obtenu.
       placeholder: Dites nous ce qu'il s'est passé
     validations:
       required: true
@@ -45,7 +46,7 @@ body:
       render: shell
   - type: markdown
     attributes:
-      value: "## Attendu pour la correction de ce bug"
+      value: "## Attendus pour la résolution de ce bug"
   - type: textarea
     id: what-should-happen
     attributes:
