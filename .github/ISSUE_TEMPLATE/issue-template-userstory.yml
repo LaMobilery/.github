@@ -20,10 +20,14 @@ body:
       label: Décrivez la fonctionnalité attendue
       placeholder: "En tant que [rôle, utilisateur], Je veux [besoin, action] afin de [bénéfice, valeur métier]"
       value: "En tant que [rôle, utilisateur], Je veux [besoin, action] afin de [bénéfice, valeur métier]"
+    validations:
+      required: true
   - type: textarea
     id: end-user-goal
     attributes:
       label: Objectif de l'utilisateur final
+    validations:
+      required: true
   - type: textarea
     id: end-business-goal
     attributes:
