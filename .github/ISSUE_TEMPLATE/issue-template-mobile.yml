@@ -1,4 +1,4 @@
-name: Rapport de bug
+name: Rapport de bug mobile
 description: Rapporter un nouveau bug
 title: "[Bug]: "
 labels: ["bug", "triage"]
@@ -16,6 +16,18 @@ body:
   - type: markdown
     attributes:
       value: "## Donnez nous plus d'informations pour reproduire et corriger ce bug"
+  - type: dropdown
+    id: os-mobile
+    attributes:
+      label: Sur quel OS le bug s'est-il produit ?
+      multiple: true
+      options: ["Android", "iOS"]
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: Pouvez-vous préciser la/les version(s) de l'OS
   - type: input
     id: test-account-login
     attributes:
@@ -29,6 +41,7 @@ body:
     id: logs
     attributes:
       label: Logs techniques
+      description: Uniquement les logs techniques issus de la console de développement (mise en forme automatique, inutile de faire des retours à la ligne)
       render: shell
   - type: markdown
     attributes:
