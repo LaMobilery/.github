@@ -1,61 +1,42 @@
-name: Bug Report
-description: File a bug report
+name: Rapport de bug
+description: Rapporter un nouveau bug
 title: "[Bug]: "
 labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
+      value: "## Décrivez le bug rencontré"
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Que s'est-il passé ?
+      placeholder: Dites nous ce qu'il s'est passé
     validations:
       required: true
-  - type: dropdown
-    id: version
+  - type: markdown
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
+      value: "## Donnez nous plus d'informations pour reproduire et corriger ce bug"
+  - type: input
+    id: test-account-login
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      label: Quel compte utilisateur peut-on utiliser pour reproduire ce bug ?
+      placeholder: jdoe@gmail.com
+  - type: input
+    id: test-account-password
+    attributes:
+      label: Quel est le mot de passe du compte de test mentionné ci-dessus ?
   - type: textarea
     id: logs
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: Logs techniques
       render: shell
-  - type: checkboxes
-    id: terms
+  - type: markdown
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      value: "## Attendu pour la correction de ce bug"
+  - type: textarea
+    id: what-should-happen
+    attributes:
+      label: Qu'est-ce qui aurait du se passer ?
+      placeholder: On aurait du pouvoir faire / voir ...
+    validations:
+      required: true
