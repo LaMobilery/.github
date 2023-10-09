@@ -6,13 +6,13 @@ body:
   - type: markdown
     attributes:
       value: |
-      Rappel: Une bonne User Story respecte les caractéristiques réunies sous le sigle **INVEST**.
-      **Indépendante**: une User Story est indépendante vis-à-vis des autres User Stories du backlog. Idéalement, elle se suffit à elle même pour éviter les dépendances avec d'autres User Stories. Car toute dépendance génère des problématiques de planification et de tests. 
-      **Négociable**: une User Story est un support de discussion en vue d’une amélioration du besoin initial. Elle peut être modifiée, on parle d'affinage jusqu'à son intégration dans une itération ou Sprint. Généralement, on considère qu'elle est affinée lorsqu'elle répond aux critères de la "Définition of Ready" établie par l'équipe. 
-      **Valorisable**: la réalisation d’une User Story doit rendre un service à l’utilisateur. Elle n'a de sens que si elle apporte une valeur métier. 
-      **Estimable**: une User Story doit être bien définie pour être facilement estimable, quel que soit votre mode d'estimation. Si l'équipe n'est pas en capacité de l'estimer, c'est souvent que votre User Story manque de clarté.
-      **Small**: une User Story doit être réalisable sur un sprint, soit suffisamment petite ou découpée de telle manière à pouvoir être déployée sur un seul sprint et minimiser les effets tunnels sur plusieurs sprints. Cherchez donc à découper vos User Stories le plus finement possible. Mieux vaut créer deux petites User Stories, qu'une grande.
-      **Testable**: une User Story doit raconter une histoire dont les critères d'acceptabilité et les tests doivent découler de manière évidente pour faciliter sa validation.
+        Rappel: Une bonne User Story respecte les caractéristiques réunies sous le sigle **INVEST**.
+        **Indépendante**: une User Story est indépendante vis-à-vis des autres User Stories du backlog. Idéalement, elle se suffit à elle même pour éviter les dépendances avec d'autres User Stories. Car toute dépendance génère des problématiques de planification et de tests. 
+        **Négociable**: une User Story est un support de discussion en vue d’une amélioration du besoin initial. Elle peut être modifiée, on parle d'affinage jusqu'à son intégration dans une itération ou Sprint. Généralement, on considère qu'elle est affinée lorsqu'elle répond aux critères de la "Définition of Ready" établie par l'équipe. 
+        **Valorisable**: la réalisation d’une User Story doit rendre un service à l’utilisateur. Elle n'a de sens que si elle apporte une valeur métier. 
+        **Estimable**: une User Story doit être bien définie pour être facilement estimable, quel que soit votre mode d'estimation. Si l'équipe n'est pas en capacité de l'estimer, c'est souvent que votre User Story manque de clarté.
+        **Small**: une User Story doit être réalisable sur un sprint, soit suffisamment petite ou découpée de telle manière à pouvoir être déployée sur un seul sprint et minimiser les effets tunnels sur plusieurs sprints. Cherchez donc à découper vos User Stories le plus finement possible. Mieux vaut créer deux petites User Stories, qu'une grande.
+        **Testable**: une User Story doit raconter une histoire dont les critères d'acceptabilité et les tests doivent découler de manière évidente pour faciliter sa validation.
   - type: textarea
     id: content
     attributes:
@@ -22,7 +22,7 @@ body:
   - type: textarea
     id: end-user-goal
     attributes:
-      label:  Objectif de l'utilisateur final
+      label: Objectif de l'utilisateur final
       placeholder: ""
       value: ""
   - type: textarea
@@ -43,5 +43,4 @@ body:
         4. Et que je saisie mon mot de passe dans le champ « Password »
         5. Et que je clique sur le bouton « Connexion » du formulaire
         6. Alors je suis authentifié sur le site
-        7. Et je suis redirigé vers la page « Mon compte » à l’URL /mon-compte.html 
-  
+        7. Et je suis redirigé vers la page « Mon compte » à l’URL /mon-compte.html
