@@ -1,5 +1,5 @@
-name: Rapport de bug mobile
-description: Rapporter un nouveau bug
+name: Rapport de bug web
+description: Rapporter un nouveau bug web
 title: "[Bug] "
 labels: ["bug", "triage"]
 body:
@@ -22,17 +22,13 @@ body:
     attributes:
       label: Sur quelle version de l'application ce bug s'est-il produit ?
   - type: dropdown
-    id: os-mobile
+    id: browser
     attributes:
-      label: Sur quel OS le bug s'est-il produit ?
+      label: Sur quel navigateur le bug s'est-il produit ?
       multiple: true
-      options: ["Android", "iOS"]
+      options: ["Firefox", "Chrome", "Safari", "Microsoft Edge", "Autre"]
     validations:
       required: true
-  - type: input
-    id: os-version
-    attributes:
-      label: Pouvez-vous préciser la/les version(s) de l'OS
   - type: input
     id: test-account-login
     attributes:
